@@ -27,8 +27,8 @@ Dự án **Website Thời Trang** được xây dựng bằng PHP. Website cung 
 ---
 
 ## Công Nghệ Sử Dụng
-- **Ngôn ngữ**: PHP (hướng đối tượng).
-- **Cơ sở dữ liệu**: MySQL.
+- **Ngôn ngữ**: PHP.
+- **Cơ sở dữ liệu**: PhpMyAdmin.
 - **HTML/CSS/JavaScript**: Giao diện người dùng.
 
 ---
