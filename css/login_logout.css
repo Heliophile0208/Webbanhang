@@ -1,0 +1,129 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container bao quanh form */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Form đăng nhập và đăng ký */
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Đặt kiểu cho các input */
+        input[type="text"], input[type="password"], select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        /* Cải thiện giao diện của các button */
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Các liên kết */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Điều chỉnh độ rộng cho các form */
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Ẩn form đăng ký khi chưa cần thiết */
+        .hidden {
+            display: none;
+        }
+
+        /* Đặt chiều rộng tối đa cho form */
+        .form-container {
+            width: 100%;
+        }
+
+        /* Đảm bảo không gian giữa các form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Kiểu cho thông báo lỗi */
+        .message {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+.text {
+    display: flex; /* Kích hoạt Flexbox */
+    justify-content: space-between; /* Căn đều khoảng cách giữa các phần tử con */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 10px; /* Khoảng cách trên */
+    font-size: 14px; /* Kích cỡ chữ */
+}
+
+.text a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #007BFF; /* Màu mặc định */
+    font-weight: bold; /* Chữ đậm */
+    transition: color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.text a:hover {
+    color: #0056b3; /* Màu khi hover */
+}
+.text_dangki {
+text-align:center;
+  margin-top: 10px; /* Khoảng cách trên */
+    font-size: 14px; 
+
+}
+.text_dangki a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #007BFF; /* Màu mặc định */
+    font-weight: bold; /* Chữ đậm */
+    transition: color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.text_dangki a:hover {
+    color: #0056b3; /* Màu khi hover */
+}
+
+        .success {
+            color: green;
+        }

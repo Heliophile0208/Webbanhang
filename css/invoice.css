@@ -1,0 +1,88 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3 {
+        color: #333;
+        text-align: center;
+    }
+
+    .order-details {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-table th, .product-table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .product-table th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+    }
+
+    .product-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .product-table tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .button-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .button-container button:hover {
+        background-color: #0056b3;
+    }
+
+    .button-container .back-button {
+        background-color: #6c757d;
+    }
+
+    .button-container .back-button:hover {
+        background-color: #5a6268;
+    }
+
+    .button-container .print-button {
+        background-color: #28a745;
+    }
+
+    .button-container .print-button:hover {
+        background-color: #218838;
+    }
+
+    /* Ẩn các nút khi in */
+    @media print {
+        .button-container {
+            display: none;
+        }
+    }

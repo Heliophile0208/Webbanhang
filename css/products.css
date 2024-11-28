@@ -1,0 +1,372 @@
+.container-products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    width: 300px;
+}
+
+.search-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+.search-form button i {
+    vertical-align: middle;
+}
+
+.flash-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.flash-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.flash-message button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="button"]:hover {
+    background-color: #e0e0e0;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    color: black;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar a {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.1s;
+}
+
+#sidebar a:hover {
+    background-color: #555;
+}
+
+#sidebar h3 {
+    color: black;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-top: 1px solid #fff;
+}
+
+#sidebar .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tự động điều chỉnh cột */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    margin: 20px auto;
+    max-width: 1200px; /* Giới hạn độ rộng tối đa */
+    padding: 0 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    max-width: 100%;
+    height: 200px; /* Cố định chiều cao ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không méo */
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.product a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.product a:hover {
+    color: #0056b3;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Hiệu ứng nổi khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Nhỏ hơn cho màn hình di động */
+    }
+}
+
+@media (max-width: 480px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Điều chỉnh thêm cho màn hình rất nhỏ */
+    }
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Optional: Add some arrows for manual navigation */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.category-title {
+    font-size: 28px;
+    font-weight: bold;
+    /* Chữ đậm */
+    color: #333;
+    /* Màu chữ tối để dễ đọc */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    /* Màu nền sáng */
+    border: 1px solid #ddd;
+    /* Đường viền mỏng xung quanh */
+
+    transition: all 0.3s ease;
+    /* Hiệu ứng chuyển động mượt mà khi hover */
+}
+
+.category-title:hover {
+    color: #007BFF;
+    /* Thay đổi màu chữ khi hover */
+    background-color: #fff;
+    border-color: #007BFF;
+
+}
+
+/* Style cho danh mục nhóm */
+.category-group {
+    margin: 10px 0;
+}
+
+/* Tiêu đề danh mục có thể nhấn */
+.category-group h3 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Ẩn danh mục con mặc định */
+/* Mặc định danh mục con bị ẩn */
+.category-list {
+    display: none;
+}
+
+/* Khi lớp 'open' được thêm vào, danh mục con sẽ hiển thị */
+.category-list.open {
+    display: block;
+}
+
+
+/* Style for product details */
+.product-detail {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-detail img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-detail h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.product-detail p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.product-detail .price {
+    font-size: 20px;
+    color: #007BFF;
+}
+
+.add-to-cart {
+    margin-top: 20px;
+}
+
+.quantity-control {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.quantity-control button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-control button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.quantity-control input {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.add-to-cart button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart button:hover {
+    background-color: #218838;
+}

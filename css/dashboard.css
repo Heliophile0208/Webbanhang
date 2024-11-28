@@ -1,0 +1,50 @@
+/* dashboard.css */
+.container-dashboard {
+    display: flex;
+    padding: 0px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.dashboard {
+    flex: 1;
+    padding: 20px;
+}
+
+#dashboard-content {
+    margin-top: 20px;
+    text-align :center;
+}

@@ -1,0 +1,239 @@
+
+
+.container-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-form input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sản phẩm chi tiết */
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-right {
+    flex: 2;
+}
+
+.product-right h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-right p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.product-right form {
+    margin-top: 20px;
+}
+
+.product-right input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-right button[type="button"] {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-right button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-right button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Đánh giá sản phẩm */
+.product-reviews {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-reviews h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-reviews .ratings {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding:5px
+}
+
+.product-reviews .star {
+    color: #ffd700;
+    font-size: 20px;
+}
+
+.product-reviews p {
+    margin-left: 10px;
+}
+
+.product-reviews textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 100px;
+}
+
+.product-reviews button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-reviews button:hover {
+    background-color: #0056b3;
+}
+
+/* Các sản phẩm cùng danh mục */
+.related-products {
+    margin-top: 30px;
+}
+
+.products-scroll-container {
+    display: flex;
+    overflow-x: auto; /* Tạo hiệu ứng cuộn ngang */
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.products {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các sản phẩm */
+}
+
+.product {
+    flex: 0 0 auto; 
+    width: 150px; /* Chiều rộng nhỏ của sản phẩm */
+    text-align: center;
+border:1px soild;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: auto;
+    height: 150px;
+    
+    margin-bottom: 10px;
+}
+
+.product:hover {
+    transform: scale(1.1); /* Phóng to khi hover vào sản phẩm */
+}
+
+.product h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.product p {
+    font-size: 12px;
+    color: #777;
+} .product a {
+text-decoration:none;
+}
+
+/* Thêm thanh cuộn tùy chỉnh nếu cần */
+.products-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.products-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.products-scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+/* Flash message */
+.flash-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flash-message button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.flash-message.show {
+    display: flex;
+}
+
