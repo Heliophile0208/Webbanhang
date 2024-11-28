@@ -1,6 +1,6 @@
 # Website Thời Trang
 
-Dự án **Website Thời Trang** được xây dựng bằng PHP theo mô hình hướng đối tượng (OOP). Website cung cấp nền tảng mua sắm trực tuyến với các tính năng thân thiện và dễ sử dụng.
+Dự án **Website Thời Trang** được xây dựng bằng PHP. Website cung cấp nền tảng mua sắm trực tuyến với các tính năng thân thiện và dễ sử dụng.
 
 ## Chức Năng Chính
 1. **Quản lý sản phẩm**:
