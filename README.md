@@ -9,7 +9,7 @@ Dự án **Website Thời Trang** được xây dựng bằng PHP. Website cung 
 
 2. **Tìm kiếm và lọc sản phẩm**:
    - Tìm kiếm sản phẩm theo từ khóa.
-   - Lọc sản phẩm theo giá, danh mục hoặc thương hiệu.
+   - Lọc sản phẩm theo tên, danh mục hoặc thương hiệu.
 
 3. **Giỏ hàng**:
    - Thêm sản phẩm vào giỏ hàng.
