@@ -32,4 +32,6 @@ Dự án **Website Thời Trang** được xây dựng bằng PHP. Website cung 
 - **HTML/CSS/JavaScript**: Giao diện người dùng.
 
 ---
+# Chạy website
+**Tải về và giải nén, đổi tên folder dự án thành Webbanhang**
 
