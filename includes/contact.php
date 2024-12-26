@@ -37,6 +37,3 @@ include_once 'header.php'; // Kết nối header và CSS
     </div>
 </div>
 <link rel="stylesheet" href="../css/contact.css" type="text/css">
-<?php
-include_once 'includes/footer.php'; // Kết nối footer và các script
-?>
