@@ -1,11 +1,10 @@
 <?php
 session_start(); // Khởi tạo session để lấy dữ liệu từ session
 
-// Bao gồm header (CSS, Font Awesome)
-include_once '/xampp/htdocs/Webbanhang/includes/header.php';
+include_once __DIR__ . "/includes/header.php";
+include_once __DIR__ . "/config/database.php";
 
-// Kết nối cơ sở dữ liệu
-include_once '/xampp/htdocs/Webbanhang/config/database.php';
+
 
 ?>
 
@@ -20,7 +19,7 @@ include_once '/xampp/htdocs/Webbanhang/config/database.php';
  
 <body>
 <?php  
-include_once '/xampp/htdocs/Webbanhang/includes/products/products.php';
+include_once __DIR__ . "/includes/products/products.php";
  ?>
 </body>
 </html>
