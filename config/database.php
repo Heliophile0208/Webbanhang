@@ -1,15 +1,1 @@
-<?php
-$host = "dpg-d2tb7qje5dus73dm0rng-a";
-$port = "5432";
-$dbname = "shop_db_rzgm";
-$user = "admin";
-$password = "6Zm28vKzRP9fD0hskWY6AR2SvLcxHDo2";
-
-try {
-    $conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Kết nối PostgreSQL thành công!";
-} catch (PDOException $e) {
-    echo "Lỗi kết nối: " . $e->getMessage();
-}
-?>
+<?php // Lấy thông tin kết nối từ biến môi trường $servername = getenv("DB_HOST") ?: "localhost"; $username = getenv("DB_USER") ?: "root"; $password = getenv("DB_PASS") ?: ""; $dbname = getenv("DB_NAME") ?: "shop_db"; $port = getenv("DB_PORT") ?: 3306; // Tạo kết nối $conn = new mysqli($servername, $username, $password, $dbname, $port); // Kiểm tra kết nối if ($conn->connect_error) { die("Kết nối thất bại: " . $conn->connect_error); } ?>
