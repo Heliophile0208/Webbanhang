@@ -1,6 +1,7 @@
 <?php
-include_once '/xampp/htdocs/Webbanhang/includes/header.php';
-include_once '/xampp/htdocs/Webbanhang/config/database.php';
+include_once __DIR__ . '/../header.php';
+include_once __DIR__ . '/../../config/database.php';
+
 // Lấy thông báo nếu có
 $success_message = '';
 if (isset($_GET['success']) && $_GET['success'] == 1 && isset($_GET['product'])) {
