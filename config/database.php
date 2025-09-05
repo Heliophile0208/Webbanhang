@@ -1,13 +1,13 @@
-
 <?php
-// Thông tin kết nối cơ sở dữ liệu
-$servername = "localhost";
-$username = "root";
-$password = ""; 
-$dbname = "shop_db"; 
+// Lấy thông tin kết nối từ biến môi trường
+$servername = getenv("DB_HOST") ?: "localhost";
+$username   = getenv("DB_USER") ?: "root";
+$password   = getenv("DB_PASS") ?: "";
+$dbname     = getenv("DB_NAME") ?: "shop_db";
+$port       = getenv("DB_PORT") ?: 3306;
 
 // Tạo kết nối
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Kiểm tra kết nối
 if ($conn->connect_error) {
